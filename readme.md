@@ -1,4 +1,4 @@
-# Testing of DLL integrante C++ and Python
+# Testing of DLL integrate C++ and Python
 
 Creation libTestN.so
 
