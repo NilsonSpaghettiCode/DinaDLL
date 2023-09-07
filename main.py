@@ -22,7 +22,7 @@ if __name__ == "__main__":
     time_i = 0
     time_f = 0
     
-    cases = 4294967290 #10.000.000.000 Diez Mil
+    cases = 4294967290 #Número de sumas a realizar:
 
     libTest = ctypes.CDLL("./libTestN.so") #Se obtiene la dll que sera .so o .dll dependiendo el OS
     performanceTest = libTest.testPerformance #Se selecciona la función o método
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     """
     C++ Performance Test
     """
-    print("Start performance test C++")
+    print("Start performance test C++ (SECONDS)")
     time_i = time.time()
     performanceTest(cases)
     time_f = time.time()
@@ -46,3 +46,4 @@ if __name__ == "__main__":
 
     print("Python time: ",time_f - time_i)
     
+
